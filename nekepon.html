@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Copia muy barata de pokemon</title>
+        <link rel="stylesheet" href="./styles.css"> 
+    </head>
+    <body>
+        <section id="seleccionar-mascota">
+            <h1 class="titulo">NEKEPON</h1>
+            <h5 class="subtitulo">Made by CalvinR</h5> 
+
+            
+            <h4 class="subtitulo">doble click para jugar </h2>
+                <h6 class="subtitulo">Elige bien! Cada personaje tiene ataques diferentes</h6>
+                
+            
+            <div id='contenedorTarjetas' class="tarjetas">
+                
+                
+                
+                
+                
+            </div>
+            <div class="button-overlay">
+            <div id="button-container">
+                <button id="boton-mascota">Play!</button>
+                
+            </div>
+        </div>
+        </section>
+
+        <section id="seleccionar-ataque">
+            <h1 class="titulo">Nekepon</h1>
+
+            <h2 class="subtitulo">ATACA!</h2>
+
+            <div class="tarjetas-ataques">
+                <button id="boton-fuego" class="boton-fuego" >Fuego 🔥</button>
+                <button id="boton-agua" class="boton-agua">Agua 💧</button>
+                <button id="boton-tierra" class="boton-tierra">Tierra 🌱</button>
+                <button id="boton-aire" class="boton-aire">Aire 🌪️</button>
+                <button id="boton-rayo" class="boton-rayo">Rayo ⚡</button>
+                <button id="boton-psiquico" class="boton-psiquico">Psiquico ♾️</button>
+                <button id="boton-vacio" class="boton-vacio">Vacio ☄️</button>
+                <button id="boton-hielo" class="boton-hielo">hielo ❄️</button>
+                
+            </div>
+
+            <div id="mensajes">
+                <p id="versusNames"></p>
+                <p id="versusEnemy"></p>
+                <p id="resultado"> VAMOS A AVERIGUARLO!</p>
+
+                <section id="reiniciar">
+                    <button id="boton-reiniciar" onclick="reiniciarJuego()">Reiniciar</button>
+                </section>
+            </div>
+
+            <div class="ataques">
+                <div class="ataques-jugador">
+                    <p id="vidas-jugador">3</p>
+                    <p id="mascota-jugador"></p>
+                    <div id="ataques-del-jugador"></div>
+                </div>
+                <div class="ataques-enemigo">
+                    <p id="vidas-enemigo">3</p>
+                    <p id="mascota-enemigo"></p>
+                    <div id="ataques-del-enemigo"></div>
+                </div>
+            </div>
+        </section>
+        <script src="./js/nekepon.js"></script>
+    </body>
+</html>

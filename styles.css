@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&display=swap');
+
+
+:root {
+  --oscuro: #212529;
+  --Amarillo-anaranjado: #fcba3e;
+  --Blanco: #f8f7f9;
+  --Azul: #2f2692;
+  --Marrón-claro: #9b8278;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--oscuro);
+  margin: 0;
+  padding: 0;
+}
+
+#seleccionar-mascota {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.titulo {
+  color: white;
+  font-size: 32px;
+  font-family: 'Fredoka One', cursive;
+  margin-top: 10px;
+  padding-top: 0;
+}
+
+.subtitulo {
+  color: white;
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.tarjetas, .tarjetas-ataques {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+  gap: 10px;
+}
+
+
+
+.tarjeta-de-mokepon {
+  width: 20vw;
+  height: 40vh;
+  background: var(--Azul);
+  
+  box-sizing: border-box;
+  border-radius: 20px;
+  position: relative;
+  transform: skew(-10deg);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0.4, 0.4);
+  
+}
+
+.tarjeta-de-mokepon p {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+  margin-bottom: 0;
+  text-align: center;
+}
+
+
+.tarjeta-de-mokepon:nth-child(2) {
+  background-image: url("https://rare-gallery.com/thumbs/326466-Dragon-Fantasy-4K-iphone-wallpaper.jpg");
+  background-size: cover;
+}
+.tarjeta-de-mokepon:nth-child(4) {
+  background-image: url("https://wallpaper.dog/large/10769688.jpg");
+  background-size: cover;
+}
+.tarjeta-de-mokepon:nth-child(6) {
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b6a08929-4ee2-4008-ba63-5864e69e0b4b/dbon9im-1dc032f7-47b2-42b9-89cb-62bbc3505ea3.png/v1/fill/w_735,h_1087,q_70,strp/thunder_by_demortum_dbon9im-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTMzMCIsInBhdGgiOiJcL2ZcL2I2YTA4OTI5LTRlZTItNDAwOC1iYTYzLTU4NjRlNjllMGI0YlwvZGJvbjlpbS0xZGMwMzJmNy00N2IyLTQyYjktODljYi02MmJiYzM1MDVlYTMucG5nIiwid2lkdGgiOiI8PTkwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.dd2ilBC1qQtGvm7hofkAeIiT5LmOKo58mp4TYI0t50g");
+  background-size: cover;
+  
+}
+
+.tarjeta-de-mokepon:nth-child(8) {
+  background-image: url("https://cdna.artstation.com/p/assets/images/images/019/775/352/large/mineo-firebeast.jpg?1565404176");
+  background-size: cover;
+}
+
+.tarjeta-de-mokepon:nth-child(10) {
+  background-image: url("https://th.bing.com/th/id/R.fd79c5a99aad53e307f40867ed70d4e6?rik=lrglat1gyekIQQ&pid=ImgRaw&r=0");
+  background-size: cover;
+}
+
+.tarjeta-de-mokepon:nth-child(12) {
+  background-image: url("https://th.bing.com/th/id/OIP.AaF2lIUU8DMfkTa4kzgnrQAAAA?w=413&h=413&rs=1&pid=ImgDetMain");
+  background-size: cover;
+}
+
+.tarjeta-de-mokepon:nth-child(14) {
+  background-image: url("https://th.bing.com/th/id/OIP.1jJridJ9qRLgFxyokNIaYAAAAA?w=474&h=474&rs=1&pid=ImgDetMain");
+  background-size: cover;
+}
+
+.tarjeta-de-mokepon:nth-child(16) {
+  background-image: url("https://th.bing.com/th/id/OIP.RSRrhoaNFIG7abKssDKHTAHaLK?w=1280&h=1930&rs=1&pid=ImgDetMain");
+  background-size: cover;
+}
+.tarjeta-de-mokepon img {
+  display: none;
+}
+.tarjeta-de-mokepon p {
+  margin-top: 0;
+  font-size: 2.3vw;
+}
+
+#boton-mascota {
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  background-image: url("https://th.bing.com/th/id/OIP.lV1_S6JKq-ha-D_ARQtOzQHaEK?w=294&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7");
+}
+/*
+#boton-mascota {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+#boton-mascota #button-container {
+  text-align: center;
+}
+#boton-mascota button {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}*/
+
+input {
+  display: none;
+}
+input:hover + label {
+  gap: 5px;
+  width: 22vw;
+  height: 42vh;
+  transition: width 0.3s ease, height 0.3s ease,  border-radius 0.3s ease, box-shadow 0.3s ease;
+}
+input:checked + label {
+  gap: 5px;
+  width: 25vw;
+  height: 45vh;
+  transition: width 0.5s ease, height 0.5s ease,  border-radius 0.5s ease, box-shadow 0.5s ease;
+}
+
+#seleccionar-ataque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.tarjetas-ataques button {
+  
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border-color: transparent;
+  width: 180px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#boton-fuego {
+  background-image: url("https://th.bing.com/th/id/OIP.r4vCDQ9TkUC0pbIy9CPuZAHaEK?w=291&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7");
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}/*
+https://th.bing.com/th/id/OIP.G8xCFEJyBcGWrZx9Cy2icQHaEK?pid=ImgDet&w=474&h=266&rs=1
+*/
+#boton-agua {
+  background-image: url("https://thumbs.dreamstime.com/b/water-explosion-beautiful-splash-blue-to-drink-42448137.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+#boton-tierra {
+  background-image: url("https://th.bing.com/th/id/R.3af2dfad6e091527e3e93448645b3e7d?rik=ZVpiDLV1szboWw&pid=ImgRaw&r=0");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+#boton-aire {
+  background-image: url("https://img.freepik.com/premium-photo/super-tornado-night-generative-ai_170984-12297.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+#boton-rayo {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/035/106/701/non_2x/ai-generated-dramatic-sky-dark-night-thunderstorm-majestic-mountains-wet-grass-generated-by-ai-free-photo.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+#boton-psiquico {
+  background-image: url("https://th.bing.com/th/id/R.72368ead5b16ae37014fa2fa976da946?rik=8OpzFQ%2fCfJBDuw&pid=ImgRaw&r=0");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+#boton-vacio {
+  background-image: url("https://scitechdaily.com/images/Quasar-Observed-in-Six-Separate-Light-Reflections-for-the-First-Time.jpg");
+ background-size: contain;
+ display: flex;
+  justify-content: center;
+}
+
+#boton-hielo {
+  background-image: url("https://th.bing.com/th/id/R.717127bc6ecc96caa07192f29e1370d9?rik=LAFYP3GFFr4nGg&pid=ImgRaw&r=0");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+#mensajes {
+  width: 280px;
+  background: #EEEEEE;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#boton-reiniciar {
+  border: none;
+  color: #11468F;
+  font-family: 'Poppins', sans-serif;
+}
+
+.ataques {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  color: white;
+  
+}
+
+#vidas-jugador, #vidas-enemigo {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.ataques-jugador, .ataques-enemigo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.tarjetas-ataques {
+  
+  flex-direction: column;
+  
+}
+
+.button-overlay {
+  display: none;
+}
+#versus-names {
+  color: aliceblue;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  margin: 0;
+}
+#resultado {
+  margin-top: 0;
+}
+@media (max-width: 640px) {
+  #contenedorTarjetas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
+  }
+  .tarjeta-de-mokepon, .tarjetas-ataques {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .tarjeta-de-mokepon {
+    width: 40vw;
+    height: 40vh;
+    transform: skew(-5deg);
+  }
+  input:hover + label {
+    width: 50vw;
+    height: 44vh;
+    transition: width 0.3s ease, height 0.3s ease,  border-radius 0.3s ease, box-shadow 0.3s ease;
+  }
+  input:checked + label {
+    width: 51vw;
+    height: 50vh;
+    transition: width 0.5s ease, height 0.5s ease,  border-radius 0.5s ease, box-shadow 0.5s ease;
+  }
+
+  .tarjeta-de-mokepon p {
+    font-size: 20px;
+  }
+
+  .tarjetas-ataques {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
